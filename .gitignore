@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# .NET
+/dotnet/.vs
+/dotnet/bin
+/dotnet/obj

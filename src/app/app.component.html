@@ -332,5 +332,35 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<style>
+  .buttons-container {
+    margin: 16px;
+  }
+
+  .button {
+    margin-right: 16px;
+  }
+
+  .json-container {
+    display: flex;
+  }
+
+  .json-textarea {
+    display: block;
+    flex: 1;
+    margin: 0 16px;
+    min-height: 400px;
+  }
+</style>
+
+<div class="buttons-container">
+  <button class="button" (click)="removeComments()">Remove Comments</button>
+  <button class="button" (click)="parsePerson()">Parse Person</button>
+</div>
+
+<div class="json-container">
+  <textarea class="json-textarea json-input" [(ngModel)]="jsonInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+  <textarea class="json-textarea json-output" readonly [value]="jsonOutput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+</div>
 
 <router-outlet />

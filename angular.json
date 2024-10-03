@@ -24,6 +24,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "dotnet/bin/Release/net8.0/browser-wasm/AppBundle/_framework",
+                "output": "dotnet"
               }
             ],
             "styles": [
